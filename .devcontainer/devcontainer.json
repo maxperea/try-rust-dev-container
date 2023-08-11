@@ -3,21 +3,23 @@
 {
 	"name": "Rust",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/rust:0-1-bullseye",
+        "build" : {
+            "dockerfile" : "Dockerfile"
+        }
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
 	// Configure tool-specific properties.
-	"customizations": {
-		// Configure properties specific to VS Code.
-		"vscode": {
-			"settings": {},
-			"extensions": [
-				"streetsidesoftware.code-spell-checker"
-			]
-		}
-	}
+	// "customizations": {
+	// 	// Configure properties specific to VS Code.
+	// 	"vscode": {
+	// 		"settings": {},
+	// 		"extensions": [
+	// 			"streetsidesoftware.code-spell-checker"
+	// 		]
+	// 	}
+	// }
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
